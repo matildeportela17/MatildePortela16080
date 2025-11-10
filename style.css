@@ -1,0 +1,281 @@
+/* GERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f8f6f3;
+  color: #222;
+  line-height: 1.6;
+}
+
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 60px;
+  background-color: white;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  width: 40px;
+  height: auto;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #0097a7;
+}
+
+.cta .btn-participa {
+  background-color: #0097a7;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.cta .btn-participa:hover {
+  background-color: #007f8e;
+}
+
+/* HERO SECTION */
+.hero {
+  background-color: #f6f3ef;
+  padding: 80px 10%;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 480px;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #0097a7;
+  color: white;
+  padding: 14px 35px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #007f8e;
+}
+
+.hero-image img {
+  width: 600px;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* CONCURSO SECTION */
+.sobre {
+  background-color: white;
+  text-align: left;
+  padding: 80px 10%;
+}
+
+.sobre h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.sobre p {
+  font-size: 1rem;
+  color: #444;
+  max-width: 800px;
+}
+
+/* PRÉMIOS SECTION */
+.premios {
+  background-color: #f6f3ef;
+  padding: 80px 10%;
+}
+
+.premios-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.premios-text {
+  flex: 1;
+  max-width: 500px;
+}
+
+.premios-text h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.premios-text h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.premios-text ul {
+  list-style: none;
+}
+
+.premios-text li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #444;
+}
+
+.premios-text strong {
+  font-weight: 600;
+}
+
+.premios-image img {
+  width: 400px;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* COMO PARTICIPAR */
+.como-participar {
+  background-color: white;
+  text-align: center;
+  padding: 80px 10%;
+}
+
+.como-participar h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.como-participar p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* Passos */
+.passos {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.passo {
+  max-width: 230px;
+  text-align: center;
+}
+
+.numero {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0097a7;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.passo p {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.passo strong {
+  color: #111;
+}
+
+/* FOOTER */
+footer {
+  background-color: white;
+  text-align: center;
+  padding: 25px;
+  font-size: 0.9rem;
+  color: #555;
+  border-top: 1px solid #ddd;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .hero-content,
+  .premios-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text,
+  .premios-text {
+    max-width: 100%;
+  }
+
+  .menu {
+    flex-direction: column;
+    padding: 15px 20px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+  }
+}
+
+
+
+
