@@ -65,6 +65,8 @@ body {
 .hero {
   background-color: #f6f3ef;
   padding: 80px 10%;
+   background-image: url('../images/header.jpg');
+   background-size: cover;
 }
 
 .hero-content {
@@ -108,11 +110,8 @@ body {
   background-color: #007f8e;
 }
 
-.hero-image img {
-  width: 600px;
-  max-width: 100%;
-  border-radius: 10px;
-}
+
+
 
 /* CONCURSO SECTION */
 .sobre {
